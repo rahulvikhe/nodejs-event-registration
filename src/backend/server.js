@@ -1,7 +1,6 @@
-// server.js
-
 const express = require('express');
 const mysql = require('mysql');
+const path = require('path'); // Import the 'path' module
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -38,6 +37,9 @@ db.query(`CREATE TABLE IF NOT EXISTS registrations (
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+// Serve static files from the 'frontend' directory
+app.use(express.static(path.join(__dirname, 'frontend')));
 
 // Routes
 app.post('/register', (req, res) => {
