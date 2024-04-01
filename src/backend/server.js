@@ -39,7 +39,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Serve static files from the 'frontend' directory
-app.use(express.static(path.join(__dirname, 'frontend')));
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Routes
 app.post('/register', (req, res) => {
