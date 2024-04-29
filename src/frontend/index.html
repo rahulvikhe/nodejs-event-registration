@@ -18,6 +18,20 @@
         <input type="tel" id="phone" name="phone" required>
         <button type="submit">Register</button>
     </form>
+    <div id="update-form">
+        <label for="update-name">Name:</label>
+        <input type="text" id="update-name" name="name" required>
+        <label for="update-email">Email:</label>
+        <input type="email" id="update-email" name="email" required>
+        <label for="update-phone">Phone:</label>
+        <input type="tel" id="update-phone" name="phone" required>
+        <button id="update-btn" type="button">Update</button>
+    </div>
+    <form id="delete-form">
+        <input type="hidden" id="delete-id" name="id">
+        <button type="submit">Delete</button>
+    </form>
+    <ul id="registrations-list"></ul>
     <p id="message"></p>
 </div>
 
