@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -19,8 +19,7 @@ h1 {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 label {
@@ -45,6 +44,27 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#update-form {
+    display: none;
+}
+
+#registrations-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#registrations-list li {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#registrations-list li:hover {
+    background-color: #f0f0f0;
 }
 
 #message {
